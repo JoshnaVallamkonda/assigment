@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <style>
+           
+           .container{
+               border: 5px solid black;
+               width: 880px;
+               height: 100px;
+               background-color: black;
+           }
+           nav{
+                float: left;
+                left: 0px;
+                height: 70px;
+                width: 880px;
+                background-color: rgb(227, 223, 223);
+                margin-bottom: 10px;
+            }
+
+           
+            aside{
+            left: 200px;
+            top: 0px;
+            width: 100px;
+            position: absolute;
+            padding : 5px;
+            height: 10px;
+            background-color:darkgray;
+             }
+
+            li{
+                list-style: none;
+                float: left;
+                width: 100px;
+                height: 30px;
+                padding: 10px;
+                text-align: left;
+                line-height: 30px;
+                background-color: rgb(227, 223, 223);
+            }
+            footer{
+            height: 50px;
+            background-color: rgb(23, 16, 220);
+            line-height: 30px;
+            width: 880px;
+            text-align: center;
+        }
+            li:hover{
+                background-color: silver;
+                cursor: pointer;
+            }
+            li a{
+                color: darkblue;
+                text-decoration: none;
+                font-weight: bold;
+            }
+            li:nth-child(1){
+                left: 0px;
+            }
+            li:nth-child(2){
+                left: 120px;
+            }
+            li:nth-child(3){
+                left: 240px;
+            }
+            li:nth-child(4){
+                left: 360px;
+            }
+            li:nth-child(5){
+                left: 480px;
+            }
+            li:nth-child(6){
+                left: 600px;
+            }
+            main{
+                background-color: silver;
+                width: 600px;
+                height: 600px;
+                float: left;
+                margin: 5px;
+            }
+            article{
+                width: 200px;
+                height: 250px;
+                text-align: justify;
+                float: left;
+                padding: 10px;
+                margin: 10px;
+            }
+            article:nth-child(1){
+                background-color: rgb(234, 234, 234);
+                top: 0px;
+                left: 0px;
+            }
+            article:nth-child(2){
+                background-color: rgb(234, 234, 234);
+                top: 0px;
+                left: 300px;
+            }
+            article:nth-child(3){
+                background-color: rgb(234, 234, 234);
+                top: 300px;
+                left: 0px;
+            }
+            article:nth-child(4){
+                background-color: rgb(234, 234, 234);
+                top: 300px;
+                left: 300px;
+            }
+            aside{
+                left: 600px;
+                top: 202px;
+                width: 255px;
+                float:calc(2000px);
+                padding: 10px;
+                height: 580px;
+                background-color: darkgray;
+                text-align: center;
+                
+            }
+        </style>
+    </head>
+    <body>
+    <!--     (header+(nav>ul>li>a{link item $}*5)+(main>section>header+article*4{Lorem})+(aside>header*{lorem})+footer) -->
+    <header class="container">
+        <img src="../day4-css-layout/images/ibm image.png"  width="300px" height="100px"></img>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="">link 1</a></li>
+            <li><a href="">link 2</a></li>
+            <li><a href="">link 3</a></li>
+            <li><a href="">link 4</a></li>
+            <li><a href="">link 5</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <article>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quas autem unde et quisquam voluptas incidunt tenetur iste atque sit nam, eos provident vel mollitia nostrum, amet beatae blanditiis quos.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sunt, distinctio voluptate atque non ad dolorum ratione doloremque nulla, tempora fugiat amet blanditiis?
+            </article>
+            <article>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quas autem unde et quisquam voluptas incidunt tenetur iste atque sit nam, eos provident vel mollitia nostrum, amet beatae blanditiis quos.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sunt, distinctio voluptate atque non ad dolorum ratione doloremque nulla, tempora fugiat amet blanditiis?
+            </article>
+            <article>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quas autem unde et quisquam voluptas incidunt tenetur iste atque sit nam, eos provident vel mollitia nostrum, amet beatae blanditiis quos.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sunt, distinctio voluptate atque non ad dolorum ratione doloremque nulla, tempora fugiat amet blanditiis?
+            </article>
+            <article>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quas autem unde et quisquam voluptas incidunt tenetur iste atque sit nam, eos provident vel mollitia nostrum, amet beatae blanditiis quos.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sunt, distinctio voluptate atque non ad dolorum ratione doloremque nulla, tempora fugiat amet blanditiis?
+            </article>
+        </section>
+        <aside> 
+            <articles>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate velit error quod quam impedit. Dicta in et quaerat, aliquid, ab veritatis dolore animi ipsa non, fugit consectetur sit mollitia nihil?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam error laboriosam aut quia saepe optio explicabo dicta! Eum accusamus, sint magni blanditiis sit reiciendis quibusdam magnam qui voluptas sequi recusandae!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, ut! Dicta expedita, voluptatum esse dolores placeat, nulla numquam obcaecati minima asperiores corrupti sunt. Reiciendis incidunt saepe , aperiam inventore?
+                Lorem ipsum dolor sit amet consectetur elit. Impedit, quibusdam! Necessitatibus vero aliquam explicabo adipisci, similique praesentium asperiores  vitae excepturi possimus perferendis   
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate velit error quod quam impedit. Dicta in et quaerat, aliquid, ab veritatis dolore animi ipsa non, fugit consectetur sit mollitia nihil?
+                Lorem, ipsum dolor sit amet consectetur 
+            </articles>
+        </aside>
+    </main>
+    
+        <footer>
+            <h3>
+               
+            </h3>
+        </footer>
+    
+    </body>
+    </html>
