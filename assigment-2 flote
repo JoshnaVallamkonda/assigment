@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+        <style>
+           
+           footer{
+                float:left;
+                height: 30px;
+                width: 950px;
+                background-color: rgb(18, 53, 229);
+                line-height: 0px;
+                left:0%;
+                right:100%;
+                
+            }
+           header{
+               width: 950px;
+               height: 100px;
+               float:left;
+               left:0px;
+               right:0px;
+               background-color: black;
+            }
+           nav{
+                float:left;
+                left:0px;
+                right:0px;
+                height: 50px;
+                width: 950px;
+                background-color: rgb(227, 223, 223);
+            }
+            li{
+                list-style: none;
+                float: left;
+                left:0px;
+                right:600px;
+                width: 100px;
+                text-align: left;
+                background-color: rgb(227, 223, 223);
+            }
+            li:hover{
+                background-color: silver;
+                float: inherit;
+                cursor: pointer;
+            }
+            li a{
+                color: darkblue;
+                float: inherit;
+                text-decoration: none;
+                font-weight: bold;
+            }
+            li:nth-child(1){
+                left: 0px;
+            }
+            li:nth-child(2){
+                left: 120px;
+            }
+            li:nth-child(3){
+                left: 240px;
+            }
+            li:nth-child(4){
+                left: 360px;
+            }
+            li:nth-child(5){
+                left: 480px;
+            }
+            aside{
+                float: left;
+                width: 300px;
+                margin: 5px;
+                padding: 10px;
+                height: 580px;
+                background-color: darkgray;
+            }
+            main{
+                background-color: silver;
+                width: 600px;
+                height: 600px;
+                float: left;
+                margin: 5px;
+            }
+            article{
+                width: 250px;
+                height: 250px;
+                text-align: justify;
+                float:left;
+                padding: 10px;
+                margin: 10px;
+            }
+            article:nth-child(1){
+                background-color: rgb(234, 234, 234);
+                top: 0px;
+                left: 0px;
+            }
+            article:nth-child(2){
+                background-color: rgb(234, 234, 234);
+                top: 0px;
+                left: 300px;
+            }
+            article:nth-child(3){
+                background-color: rgb(234, 234, 234);
+                top: 300px;
+                left: 0px;
+            }
+            article:nth-child(4){
+                background-color: rgb(234, 234, 234);
+                top: 300px;
+                left: 300px;
+            }
+        </style>
+    </head>
+    <body>
+    <!--     (header+(nav>ul>li>a{link item $}*5)+(main>section>header+article*4{Lorem})+(aside>header*{lorem})+footer) -->
+    <header>
+        <img src="../day4-css-layout/images/ibm image.png"  width="300px" height="100px"></img>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="">Link 1</a></li>
+            <li><a href="">Link 2</a></li>
+            <li><a href="">Link 3</a></li>
+            <li><a href="">Link 4</a></li>
+            <li><a href="">Link 5</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <article>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quas autem unde et quisquam voluptas incidunt tenetur iste atque sit nam, eos provident vel mollitia nostrum, amet beatae blanditiis quos.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sunt, distinctio voluptate atque non ad dolorum ratione doloremque nulla, tempora fugiat amet blanditiis?
+            </article>
+            <article>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quas autem unde et quisquam voluptas incidunt tenetur iste atque sit nam, eos provident vel mollitia nostrum, amet beatae blanditiis quos.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sunt, distinctio voluptate atque non ad dolorum ratione doloremque nulla, tempora fugiat amet blanditiis?
+            </article>
+            <article>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quas autem unde et quisquam voluptas incidunt tenetur iste atque sit nam, eos provident vel mollitia nostrum, amet beatae blanditiis quos.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sunt, distinctio voluptate atque non ad dolorum ratione doloremque nulla, tempora fugiat amet blanditiis?
+            </article>
+            <article>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quas autem unde et quisquam voluptas incidunt tenetur iste atque sit nam, eos provident vel mollitia nostrum, amet beatae blanditiis quos.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sunt, distinctio voluptate atque non ad dolorum ratione doloremque nulla, tempora fugiat amet blanditiis?
+            </article>
+        </section>
+        </main>
+        <aside>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quas autem unde et quisquam voluptas incidunt tenetur iste atque sit nam, eos provident vel mollitia nostrum, amet beatae blanditiis quos.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sunt, distinctio voluptate atque non ad dolorum ratione doloremque nulla, tempora fugiat amet blanditiis? Dolore sapiente voluptatibus quae fugit, optio ad?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea laudantium voluptatem possimus, fugiat tenetur tempore sed a cum earum incidunt doloremque adipisci odit saepe nostrum magni! Dolorem animi porro perspiciatis.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, praesentium! Obcaecati adipisci dolorem amet tenetur perspiciatis delectus veniam architecto error quaerat. Ut quaerat maxime impedit recusandae reprehenderit ipsa culpa ducimus.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quas autem unde et quisquam voluptas incidunt tenetur iste atque sit nam, eos provident vel mollitia nostrum, amet beatae blanditiis quos.
+               
+            </p>
+        </aside>
+        <footer>
+            <h3></h3>
+        </footer>
+    </body>
+    </html>
